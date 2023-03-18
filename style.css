@@ -32,7 +32,7 @@ body{
 
 .txt{
   font-family: Arial;
-  width: 240px;
+  width: 15em;
   color: white;
   text-align: justify;
   display: flex;
@@ -47,7 +47,7 @@ body{
  border: none;
  font-size: 20px;
  color: #fff;
- width: 240px;
+ width: 15em;
  height: 2em;
  line-height: 2em;
  text-align: center;
