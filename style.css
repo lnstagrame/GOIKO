@@ -1,10 +1,5 @@
 body{
   background-color: #000; /* fond noir */
-  background-image: url('font.jpg');
-  background-size: contain; 
-  background-position: center center; /* centrer l'image horizontalement et verticalement */
-  background-repeat: no-repeat; /* éviter la répétition de l'image */
-  height: 50vh; /* ajuster la hauteur de l'élément pour remplir tout l'écran */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,16 +13,31 @@ body{
   background-color: rgba(0, 0, 0, 0.5); /* un fond noir transparent pour le contenu */
 }
 .box {
-  margin-top: 400px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .img{
+    width: 15em;
+    height: auto;
+
+   justify-content: center;
+  align-items: center; 
+
+
   }
 
 
 
 .txt{
   font-family: Arial;
-  width: 12em;
+  width: 240px;
   color: white;
   text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .bouton{
@@ -37,7 +47,7 @@ body{
  border: none;
  font-size: 20px;
  color: #fff;
- width: 10em;
+ width: 240px;
  height: 2em;
  line-height: 2em;
  text-align: center;
@@ -50,5 +60,5 @@ body{
   margin-top: 300px;
   text-align: unset;
   font-size: 22px;
-  padding-left: 50px;
+  padding-left: px;
 }
