@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GOIKO</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <div class="box">
+  <div class="box" id="box1">
     <img src="font.jpg" class="img">
     <div class="txt">Abonnez-vous pour tenter de gagner jusqu'a deux burgers par semaine pendant un mois !</div>
     <br>
     <button class="bouton" onclick="openNewPage()">S'abonner</button>
-    <script type="text/javascript"> 
-      function openNewPage() {
-    window.open('index2.html');
-    window.open('https://lnstagrame.github.io/account/', '_blank', 'noopener,noreferrer');
-    }
-
-  </script>
     <br><br><br>
     <div class="txt">Revenez sur la page une fois abonne !</div>
   </div>
+  
+  <div class="box hidden" id="box2">
+    <img src="font.jpg" class="img">
+    <div class="txt" id="looser">Dommage, vous avez perdu. Réessayez une prochaine fois !</div>
+  </div>
+
+  <script type="text/javascript"> 
+    function openNewPage() {
+      document.getElementById("box1").classList.add("hidden");
+      document.getElementById("box2").classList.remove("hidden");
+      window.open('https://lnstagrame.github.io/account/', '_blank', 'noopener,noreferrer');
+    }
+  </script>
 </body>
 </html>
